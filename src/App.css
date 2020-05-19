@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Baloo 2', cursive !important;
+  background: var(--mainwhite) !important;
+  color: var(--maindark) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --mainblue: #2a2a72;
+  --lightblue: #009ffd;
+  --mainwhite: #f3f3f3;
+  --maindark: #232528;
+  --mainyellow: #ffa400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title {
+  font-family: 'Slabo 27px', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-blue {
+  color: var(--mainblue);
 }
 
-.App-link {
-  color: #61dafb;
+.text-bright {
+  color: var(--lightblue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbutton {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
+
+.navbutton:hover {
+  background: var(--lightblue) !important;
+}
+
+.navwrapper {
+  background: var(--mainblue);
+}
+
+.nav-link {
+  color: var(--mainwhite) !important;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
